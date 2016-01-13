@@ -1,0 +1,5 @@
+<launch>
+
+	<rosparam file="$(find arm_config)/config/sensor_rgbd.yaml" command="load"/>
+
+</launch>

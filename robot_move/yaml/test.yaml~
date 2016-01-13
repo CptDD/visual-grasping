@@ -1,0 +1,6 @@
+robot_parameters:
+   motor: maxon
+   parameters:
+    speed:1
+    load:2
+    rate current:23

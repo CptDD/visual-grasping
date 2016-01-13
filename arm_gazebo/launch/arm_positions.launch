@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+
+<launch>
+	<rosparam file="$(find arm_gazebo)/config/arm_joint_positions.yaml" command="load"/>
+
+	<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+		 ns="/manipulator_arm" args="joint1_poisition_controller
+		                            joint2_poisition_controller
+		                            joint3_poisition_controller
+		                            joint4_poisition_controller
+		                            joint5_poisition_controller
+		                            joint6_poisition_controller
+		                            joint7_poisition_controller"/>
+</launch>

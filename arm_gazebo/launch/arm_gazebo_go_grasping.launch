@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+
+<launch>
+
+	<include file="$(find arm_gazebo)/launch/robot_world.launch"/>
+
+	<include file="$(find arm_gazebo)/launch/arm_states.launch"/>
+
+	<include file="$(find arm_gazebo)/launch/arm_trajectory_controller.launch"/>
+
+</launch>

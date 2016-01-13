@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="debugger_node" pkg="r2d2" type="r2d2_node"
+	 launch-prefix="xterm -e gdb --args" output="screen"/>
+</launch>

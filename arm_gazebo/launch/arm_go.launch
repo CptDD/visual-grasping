@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+
+<launch>
+		 <include file="$(find arm_gazebo)/launch/arm_world.launch"/>
+
+		 <include file="$(find arm_gazebo)/launch/arm_states.launch"/>
+
+		 <!-- <include file="$(find arm_gazebo)/launch/arm_positions.launch"/> -->
+
+
+		 <include file="$(find arm_gazebo)/launch/arm_trajectory_controller.launch"/> 
+
+		 <include file="$(find arm_config)/launch/moveit_planning_execution.launch"/>
+
+</launch>

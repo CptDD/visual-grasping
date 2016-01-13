@@ -1,0 +1,6 @@
+<?xml version='1.0'?>
+
+<launch>
+	<node name="interactive_marker" pkg="r2d2" type="r2d2_state_pub"/>
+	<node name="visualiser" pkg="rviz" type="rviz" args="-d ($find r2d2)/config/example.rviz"/>
+</launch>

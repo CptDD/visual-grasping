@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+	<node name="noder" pkg="r2d2" type="r2d2_node" output="screen"/>
+	<node name="vizer" pkg="rviz" type="rviz" args="-d (find r2d2)/config/example.rviz"/>
+</launch>

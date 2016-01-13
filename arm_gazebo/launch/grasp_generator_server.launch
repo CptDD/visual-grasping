@@ -1,0 +1,20 @@
+<launch>
+  <arg name="robot" default="manipulator_arm"/>
+
+  <arg name="group"        default="arm"/>
+  <arg name="end_effector" default="gripper"/>
+
+
+   <include file="$(find arm_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+
+  <node pkg="moveit_simple_grasps" type="moveit_simple_grasps_server" name="moveit_simple_grasps_server">
+    <param name="group"        value="$(arg group)"/> 
+    <param name="end_effector" value="$(arg end_effector)"/>
+     <rosparam file="$(find arm_gazebo)/config/$(arg robot)_grasp_data.yaml" command="load"/> 
+  </node> 
+
+
+</launch>
