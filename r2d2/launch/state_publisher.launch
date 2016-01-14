@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-
-<launch>
-	<param name="robot description" command="cat $(find r2d2)/urdf/robot.urdf"/>
-	<node name="state_publisher" pkg="r2d2" type="r2d2_node"/>
-	<node name="robot_state_publisher" pkg="r2d2" type="r2d2_node"/>
-</launch>

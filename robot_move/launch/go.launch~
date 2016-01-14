@@ -1,4 +1,0 @@
-<launch>
-	<node name="publisher" pkg="robot_move" type="robot_move_node" output="screen"/>
-	<node name="subscriber" pkg="robot_move" type="robot_move_node_2" output="screen"/>
-</launch>

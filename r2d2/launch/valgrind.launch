@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-	<node name="valgrind_node" pkg="r2d2" type="r2d2_node"
-	launch-prefix="valgrind" output="screen"/>
-</launch>
